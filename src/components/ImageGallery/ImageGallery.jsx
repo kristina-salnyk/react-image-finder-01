@@ -31,7 +31,8 @@ class ImageGallery extends Component {
     if (imageRect) {
       window.scrollBy({
         top:
-          imageRect.height * Math.floor(window.innerHeight / imageRect.height),
+          imageRect.height *
+          (Math.floor(window.innerHeight / imageRect.height) - 1),
         behavior: 'smooth',
       });
     }
