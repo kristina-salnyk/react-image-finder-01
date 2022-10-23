@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Loader = styled('div')`
+export const Loader = styled.div`
   position: fixed;
   top: 72px;
   left: 0;

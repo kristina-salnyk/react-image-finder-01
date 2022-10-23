@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Overlay = styled('div')`
+export const Overlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@ export const Overlay = styled('div')`
   z-index: 1200;
 `;
 
-export const Modal = styled('div')`
+export const Modal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
