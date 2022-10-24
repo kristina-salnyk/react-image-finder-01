@@ -25,11 +25,17 @@ class Modal extends Component {
     }
   };
 
+  handleOverlayClick = event => {
+    if (event.target === event.currentTarget) {
+      this.props.onClick();
+    }
+  };
+
   render() {
-    const { onClick, children } = this.props;
+    const { children } = this.props;
 
     return createPortal(
-      <Overlay onClick={() => onClick()}>
+      <Overlay onClick={this.handleOverlayClick}>
         <ModalContainer>{children}</ModalContainer>
       </Overlay>,
       modalRoot
